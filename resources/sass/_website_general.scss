@@ -1,0 +1,86 @@
+:root {
+    // Colors
+    --e-global-color-primary: #FFFFFF;
+    --e-global-color-secondary: #311073;
+    --e-global-color-text: #FFFFFF;
+    --e-global-color-accent: #7000FF;
+    --e-global-color-3dfbfa0: #288FFF;
+    --e-global-color-c7e8102: #28E5FF;
+    --e-global-color-ea2e55d: #D185FF;
+    --e-global-color-7455e81: #2E1922;
+    --e-global-color-40823ce: #26114B;
+    --e-global-color-9191a14: #15213D;
+    --e-global-color-aad47af: #141437;
+    --e-global-color-1b9a2c4: #86472C;
+    --e-global-color-ef64541: #6528D2;
+    --e-global-color-bdbb62f: #226799;
+    --e-global-color-d8f8937: #1D3280;
+    --e-global-color-47fd954: #4792FF;
+    --e-global-color-b16038c: #C9F3FF;
+    --e-global-color-3f84a40: #261743;
+    --e-global-color-961bc4b: #B880FF;
+    // --e-global-color-93c6822: #110A1F;
+    --e-global-color-93c6822: #020610;
+    --e-global-color-ca5f356: #505663;
+    --e-global-color-0cd487b: #5B6DF2;
+    --e-global-color-8c6f44b: #4792FF;
+    --e-global-color-fd2343a: #63A2FF;
+    --e-global-color-a30304e: #818287;
+    --e-global-color-0947708: #26174375;
+
+    // Typography
+    --e-global-typography-primary-font-family: "Kanit";
+    --e-global-typography-secondary-font-family: "Inter";
+    --e-global-typography-text-font-family: "Inter";
+    --e-global-typography-accent-font-family: "Inter";
+}
+
+/* Ensure html element also has full height */
+html {
+    height: -webkit-fill-available; /* For iOS Safari */
+    height: 100%;
+}
+
+// Default body styles
+.website-body {
+    color: var(--e-global-color-primary);
+    background-color: var(--e-global-color-93c6822);
+    font-family: var(--e-global-typography-text-font-family);
+    min-height: 100vh; /* Viewport height units */
+    min-height: -webkit-fill-available; /* For iOS Safari */
+    height: 100%; /* Fallback */
+    margin: 0; /* Remove default margin */
+}
+
+// Typography utility classes
+.heading-primary {
+    font-family: var(--e-global-typography-primary-font-family);
+    font-size: var(--e-global-typography-primary-font-size, 40px);
+    font-weight: var(--e-global-typography-primary-font-weight, 800);
+    text-transform: var(--e-global-typography-primary-text-transform, uppercase);
+    line-height: var(--e-global-typography-primary-line-height, 44px);
+}
+
+.heading-secondary {
+    font-family: var(--e-global-typography-secondary-font-family);
+    font-size: var(--e-global-typography-secondary-font-size, 16px);
+    font-weight: var(--e-global-typography-secondary-font-weight, 700);
+    text-transform: var(--e-global-typography-secondary-text-transform, capitalize);
+    line-height: var(--e-global-typography-secondary-line-height, 20px);
+}
+
+.text-body {
+    font-family: var(--e-global-typography-text-font-family);
+    font-size: var(--e-global-typography-text-font-size, 16px);
+    font-weight: var(--e-global-typography-text-font-weight, 400);
+    line-height: var(--e-global-typography-text-line-height, 20px);
+}
+
+
+.website-body .navbar-nav .nav-link.active, .navbar-nav .nav-link.show, .navbar-nav:active {
+    color: var(--e-global-color-accent);
+}
+
+.website-body .nav-link:hover, .website-body .nav-link:focus {
+    color: var(--e-global-color-961bc4b);
+}
